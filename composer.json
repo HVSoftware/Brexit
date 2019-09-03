@@ -1,0 +1,30 @@
+{
+    "name": "hvsoftware/brexit",
+    "description": "This library will help your application to support the Brexit.",
+    "keywords": ["composer", "brexit"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harry van der Valk",
+            "email": "info@hvsoftware.nl"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brexit\\": "src/Brexit"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brexit\\": "tests/Brexit"
+        }
+    },
+    "minimum-stability": "dev"
+}
