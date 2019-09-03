@@ -15,8 +15,13 @@ namespace Brexit;
  */
 class BrexitTest extends \PHPUnit\Framework\TestCase
 {
+    public function testExitDate() {
+        $this->assertEquals(Brexit::EXIT_DATE_TIME, '31-10-2019T23:59', 'The Brexit exit date has changed. We do not know how to handle this.');
+    }
+
     public function testExit()
     {
-        $this->assertEquals(Brexit::EXIT_DATE_TIME, '31-10-2019T23:59', 'The Brexit exit date has changed. We do not know how to handle this.');
+        Brexit::exit();
+        $this->assertTrue(TRUE);
     }
 }
