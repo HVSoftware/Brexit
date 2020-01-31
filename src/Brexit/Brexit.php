@@ -9,11 +9,10 @@ namespace Brexit;
  */
 class Brexit
 {
-
     /**
      * @var string
      */
-    CONST EXIT_DATE_TIME = '31-10-2019T23:59';
+    CONST EXIT_DATE_TIME = '31-01-2020T23:59';
 
     /**
      * @param $message
