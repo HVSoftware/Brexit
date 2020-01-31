@@ -3,6 +3,7 @@ install:
 
 verify:
 	./vendor/bin/phpcs --standard=PSR2 ./src ./tests/Brexit
+	vendor/bin/phpstan analyse src tests/Brexit --level max
 	./vendor/bin/phpunit
 
 phpcbf:
@@ -13,3 +14,6 @@ phpcbf-fix:
 
 phpunit:
 	./vendor/bin/phpunit
+
+phpstan:
+	vendor/bin/phpstan analyse src tests/Brexit --level max

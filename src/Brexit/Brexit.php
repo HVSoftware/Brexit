@@ -26,7 +26,7 @@ class Brexit
     public static function exit(
         string $message = "This application is not supported anymore. Please consult the EU!",
         int $code = 1
-    ) {
+    ): void {
         if (strtotime(self::EXIT_DATE_TIME) < time()) {
             echo $message;
             die($code);

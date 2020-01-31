@@ -20,12 +20,12 @@ use PHPUnit\Framework\TestCase;
  */
 class BrexitTest extends TestCase
 {
-    public function testExitDate()
+    public function testExitDate(): void
     {
         $this->assertEquals(Brexit::EXIT_DATE_TIME, '31-01-2020T23:59', 'We have a final date.');
     }
 
-    public function testExit()
+    public function testExit(): void
     {
         Brexit::exit();
         $this->assertTrue(true);
