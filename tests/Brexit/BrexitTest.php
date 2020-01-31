@@ -22,7 +22,20 @@ class BrexitTest extends TestCase
 {
     public function testExitDate(): void
     {
-        $this->assertEquals(Brexit::EXIT_DATE_TIME, '31-01-2020T23:59', 'We have a final date.');
+        $this->assertEquals(
+            Brexit::EXIT_DATE_TIME,
+            '31-01-2020T23:59',
+            'We have a final date.'
+        );
+    }
+
+    public function testExitAfterTransitionDate(): void
+    {
+        $this->assertEquals(
+            Brexit::EXIT_TRANSITION_PERIOD_DATE_TIME,
+            '31-12-2020T23:59',
+            'We have a final date.'
+        );
     }
 
     public function testExit(): void
